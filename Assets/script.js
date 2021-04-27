@@ -17,3 +17,7 @@ console.log(currentDay);
 //Crystal activity #8 shows how to print something to text by id 
 // $("#number-to-guess").text(targetNumber);
 $("#currentDay").text(currentDay);
+
+//Show current time in the console using moment format LT from docs
+var currentTime = moment().format('LT');
+console.log(currentTime);
