@@ -1,6 +1,6 @@
 //TO DO
-// 1. Display date on top of daytimer ******COMPLETE*******
-// 2. use jquery or make time blocks for daytimer
+// 1. *****COMPLETE***** Display date on top of daytimer ******COMPLETE*******
+// 2. *****COMPLETE***** use jquery or make time blocks for daytimer *****COMPLETE*****
 // 3. make accurate time display in time blocks in daytimer
 // 4. make save button on each time block work in local storage
 
@@ -22,7 +22,8 @@ $("#currentDay").text(currentDay);
 const currentTime = moment().format('LT');
 console.log(currentTime);
 
-
+//Making saveBtn global so it can be called from multiple time blocks
+let saveButton = $('.saveBtn');
 
 //Making on click console log for save button using activity 5 as reference.
 
@@ -34,7 +35,7 @@ $(document).ready(function () {
     // Notice I have the #click-me, click, and then the function
     // So $("#id|.class|element").on("action", function(){});
     // And so whenever it is clicked...
-    $("#saveBtn").on("click", function () {
+    $(".saveBtn").on("click", function () {
         // checking if click works first
         // alert("I've been clicked!");
         console.log("click");
