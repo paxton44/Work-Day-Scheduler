@@ -16,4 +16,4 @@ console.log(currentDay);
 
 //Crystal activity #8 shows how to print something to text by id 
 // $("#number-to-guess").text(targetNumber);
-// $("currentDay").text(currentDay);
+$("#currentDay").text(currentDay);
