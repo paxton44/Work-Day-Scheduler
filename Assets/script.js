@@ -1,5 +1,5 @@
 //TO DO
-// 1. Display time on top of daytimer
+// 1. Display date on top of daytimer ******COMPLETE*******
 // 2. use jquery or make time blocks for daytimer
 // 3. make accurate time display in time blocks in daytimer
 // 4. make save button on each time block work in local storage
@@ -21,3 +21,7 @@ $("#currentDay").text(currentDay);
 //Show current time in the console using moment format LT from docs
 var currentTime = moment().format('LT');
 console.log(currentTime);
+
+
+//Use jQuery to generate timeblocks
+var newDiv = $("<div>");
