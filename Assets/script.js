@@ -4,6 +4,7 @@
 // 3. *****COMPLETE***** make accurate time display in time blocks in daytimer *****COMPLETE*****
 // 4. make save button on each time block work in local storage
 $(document).ready(function () {
+   
     //Test if JS file is linked to index.html
     console.log("Connected to index.html");
 
@@ -25,6 +26,8 @@ $(document).ready(function () {
     //Crystal activity #8 shows how to print something to text by id 
     // $("#number-to-guess").text(targetNumber);
     $("#currentTime").text(currentTime);
+
+    
     
     // Here we use jQuery to select the header with "click-me" as its ID.
     // Notice I have the #click-me, click, and then the function
@@ -39,9 +42,10 @@ $(document).ready(function () {
         console.log(userInput);
 
         localStorage.setItem(time, userInput);
-
+        
 
     });
+
 
 
 
