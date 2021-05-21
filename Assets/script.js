@@ -1,9 +1,9 @@
 //TO DO
 // 1. *****COMPLETE***** Display date on top of daytimer ******COMPLETE*******
 // 2. *****COMPLETE***** use jquery or make time blocks for daytimer *****COMPLETE*****
-// 3. make accurate time display in time blocks in daytimer
+// 3. *****COMPLETE***** make accurate time display in time blocks in daytimer *****COMPLETE*****
 // 4. make save button on each time block work in local storage
-
+$(document).ready(function () {
 //Test if JS file is linked to index.html
 console.log("Connected to index.html");
 
@@ -22,35 +22,40 @@ $("#currentDay").text(currentDay);
 const currentTime = moment().format('LT');
 console.log(currentTime);
 
-//Making saveBtn global so it can be called from multiple time blocks
-let saveButton = $('.saveBtn');
+$("#currentTime").text(currentTime);
 
-//Making on click console log for save button using activity 5 as reference.
 
-// This "document.ready" code isn't necessary in this example... but is useful to become familiar with.
-// "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
-$(document).ready(function () {
-
-    // Here we use jQuery to select the header with "click-me" as its ID.
-    // Notice I have the #click-me, click, and then the function
-    // So $("#id|.class|element").on("action", function(){});
-    // And so whenever it is clicked...
-    $(".saveBtn").on("click", function () {
-        // checking if click works first
-        // alert("I've been clicked!");
-        console.log("click");
-
-        // adding the save to local storage using activity 21 and activity 18 as an example. 
-        //This is how we make the text input able to be saved to local storage.
-        // this.siblings targets the text area and anything related to it that isn't a parent and allows the on click function to drive everything at once.
-        const timeBlock = $(this).siblings('textarea').attr('id');
-        const textValue = $(this).siblings('textarea').val()
-        localStorage.setItem(timeBlock, textValue);
-        console.log(textValue);
+    // $(".saveBtn").on("click", function () {
+    //     // checking if click works first
+    //     // alert("I've been clicked!");
+    //     console.log("click");
         
+    //     // adding the save to local storage using activity 21 and activity 18 as an example. 
+    //     //This is how we make the text input able to be saved to local storage.
+    //     // this.siblings targets the text area and anything related to it that isn't a parent and allows the on click function to drive everything at once.
+    //     const textValue = $(this).siblings('textarea').val();
+    //     const timeBlock = $(this).siblings('#9AM').attr('id');
+    //     //setting the timeblock and text area to local
+    //     localStorage.setItem(timeBlock, textValue);
 
+    //     $('textarea').text(textValue);
 
+    //     console.log(timeBlock, textValue);
+    // });
 
-    });
+   
+  
+        // Here we use jQuery to select the header with "click-me" as its ID.
+        // Notice I have the #click-me, click, and then the function
+        // So $("#id|.class|element").on("action", function(){});
+        // And so whenever it is clicked...
+        $("#saveButton").on("click", function() {
+        //   alert("I've been clicked!");
+        console.log("The #saveButton has been clicked.");
+        });
+  
+      
+ 
+    
 
 });
