@@ -4,7 +4,7 @@
 // 3. *****COMPLETE***** make accurate time display in time blocks in daytimer *****COMPLETE*****
 // 4. make save button on each time block work in local storage
 $(document).ready(function () {
-   
+ 
     //Test if JS file is linked to index.html
     console.log("Connected to index.html");
 
@@ -42,13 +42,16 @@ $(document).ready(function () {
         console.log(userInput);
 
         localStorage.setItem(time, userInput);
+        window.localStorage.setItem(time, userInput);
         
+        console.log(localStorage);
 
     });
 
-
-
-
+    //im calling the timeslot div id by time and then im using the class that the text value is input to. 
+    $("#9AM .col-sm-10").val(localStorage.getItem("9AM"));
+    $("#10AM .col-sm-10").val(localStorage.getItem("10AM"));
+ 
 
 
 });
