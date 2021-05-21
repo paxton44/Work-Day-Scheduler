@@ -30,7 +30,7 @@ $(document).ready(function () {
     // Notice I have the #click-me, click, and then the function
     // So $("#id|.class|element").on("action", function(){});
     // And so whenever it is clicked...
-    $("#saveButton").on("click", function () {
+    $(".saveButton").on("click", function () {
         //   alert("I've been clicked!");
         console.log("The #saveButton has been clicked.");
 
