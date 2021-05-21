@@ -14,31 +14,37 @@
 </head>
 
 <body>
+  <!-- Header where date and time are displayed -->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
     <p id="currentTime"></p>
   </header>
-  <div class="container" id="timeBlock">
-    <!-- Timeblocks go here -->
-    <div id="9AM" class="container">
-      <!-- added the time-block class from the stylesheet -->
-      <div class="row">
-        <!-- This colum is where time is displayed. -->
-        <div class="col-sm-1 hour" id="9AM">
 
-        </div>
-        <!-- This colum is where the text is input. I also linked the time-block class from the stylesheet -->
-        <textarea id="time-block" class="col-sm-10 time-block ">
-
-          </textarea>
-        <!-- This colum is where the save button is located and is operated. I added the saveBtn class from the stylesheet.-->
-        <button id="saveButton" class="col-sm-1 saveBtn">
-          Save
-        </button>
+  <!-- Timeslots for workday -->
+  <div class="container">
+<!-- Im calling the timeslot id as the key and the text input by class as the value -->
+   <div id="9:00 AM" class="row time-slot">
+      <div class="col-sm-1 hour">
+        9AM
       </div>
+      <textarea class="col-sm-10 time-block">
+      </textarea>
+      <button class="btn saveBtn col-sm-1" id="saveButton">Save</button>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
 
