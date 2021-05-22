@@ -2,7 +2,7 @@
 
 # Description
 
-This application gives the user the opportunity to view their entire work day and save notes in timeblocks according to their schedule. It will keep their notes saved in the appropriate time blocks until the user deletes them.
+This application gives the user the opportunity to view their entire work day and save notes in timeblocks according to their schedule. It will keep their notes saved in the appropriate time blocks until the user updates them.
 
 
 ## Table of Contents
@@ -33,12 +33,13 @@ This application gives the user the opportunity to view their entire work day an
 
 
 ## References
-1.https://developer.mozilla.org/en-US/docs/Web/API/Node
+1. https://momentjs.com
 2. https://www.w3schools.com
 3. https://youtube.com
 4. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+ 
 
 
 ## Demo
 
-![Demo](public/icons/images/budgetTrackerExample.png)
+![Demo](Assets/Images/app.png)
