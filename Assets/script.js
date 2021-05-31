@@ -68,6 +68,19 @@ $(document).ready(function () {
     $("#3PM .col-sm-10").val(localStorage.getItem("3PM"));
     $("#4PM .col-sm-10").val(localStorage.getItem("4PM"));
     $("#5PM .col-sm-10").val(localStorage.getItem("5PM"));
+
+
+//change color for time blocks 
+//make function that cycles through the timeblocks by hour using for loop and moment format
+//make array of timeBlocks to enable the color to change by specific times using moment 
+//make 3 if statements that say;
+//if the timeBlock is behind the current time displayed display past color highlight 
+//if the timeBlock is the present time displayed display present color highlight 
+//if the timeBlock is ahead the current time displayed display future color highlight 
+function setTimeBlockColor() {
+
+
+}
     
 
 
