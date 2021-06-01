@@ -7,15 +7,17 @@
 
 // 5. Make the time change color 
 
-
+var timeBlockTimes = ['08', '09', '10', '11', '12', '13', '14', '15', '16'];
+var timeCalibration = (moment().startOf('day').fromNow()).replace(" hours ago", "");
+var timeSet = document.getElementsByTagName('textarea');
 
 
 
 
 
 $(document).ready(function () {
-    
- 
+
+
     //Test if JS file is linked to index.html
     console.log("Connected to index.html");
 
@@ -25,6 +27,7 @@ $(document).ready(function () {
     //Make the Variable that uses moment to display the currentDay
     const currentDay = moment().format('MMMM Do YYYY');
     console.log(currentDay);
+   
 
     //Crystal activity #8 shows how to print something to text by id 
     // $("#number-to-guess").text(targetNumber);
@@ -33,10 +36,11 @@ $(document).ready(function () {
     //Show current time in the console using moment format LT from docs
     const currentTime = moment().format('LT');
     console.log(currentTime);
-    
+
     //Crystal activity #8 shows how to print something to text by id 
     // $("#number-to-guess").text(targetNumber);
     $("#currentTime").text(currentTime);
+
     
     // Here we use jQuery to select the header with "click-me" as its ID.
     // Notice I have the #click-me, click, and then the function
@@ -46,17 +50,19 @@ $(document).ready(function () {
         //   alert("I've been clicked!");
         console.log("The #saveButton has been clicked.");
 
+
         var userInput = $(this).siblings(".time-block").val();
         var time = $(this).parent().attr("id");
         console.log(userInput);
 
         localStorage.setItem(time, userInput);
         window.localStorage.setItem(time, userInput);
-        
+
         console.log(localStorage);
 
+
     });
-    
+
 
     //im calling the timeslot div id by time and then im using the class that the text value is input to. it uses these to get the items by id from local 
     $("#9AM .col-sm-10").val(localStorage.getItem("9AM"));
@@ -70,28 +76,18 @@ $(document).ready(function () {
     $("#5PM .col-sm-10").val(localStorage.getItem("5PM"));
 
 
-//change color for time blocks 
-//make function that cycles through the timeblocks by hour using for loop and moment format
-//make array of timeBlocks to enable the color to change by specific times using moment 
-//make 3 if statements that say;
-//if the timeBlock is behind the current time displayed display past color highlight 
-//if the timeBlock is the present time displayed display present color highlight 
-//if the timeBlock is ahead the current time displayed display future color highlight 
-function setTimeBlockColor() {
-
-
-}
-    
-
-
-
-
-
-
-
-
-  
- 
-
-
+    //change color for time blocks 
+    //make function that cycles through the timeblocks by hour using for loop and moment format
+    //make array of timeBlocks to enable the color to change by specific times using moment 
+    // var timeBlockTimes = ['08','09','10','11','12','13','14','15','16'];
+    // var timeCalibration = (moment().startOf('day').fromNow()).replace(" hours ago", "");
+    // var timeSet = document.getElementsByTagName('textarea');
+    //make 3 if statements that say;
+    //if the timeBlock is behind the current time displayed display past color highlight 
+    //if the timeBlock is the present time displayed display present color highlight 
+    //if the timeBlock is ahead the current time displayed display future color highlight 
+    function setTimeBlockColor() {
+        
+    }
 });
+
