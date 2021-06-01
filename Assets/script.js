@@ -7,11 +7,6 @@
 
 // 5. Make the time change color 
 
-var timeBlockTimes = ['08', '09', '10', '11', '12', '13', '14', '15', '16'];
-var timeCalibration = (moment().startOf('day').fromNow()).replace(" hours ago", "");
-var timeSet = document.getElementsByTagName('textarea');
-
-
 
 
 
